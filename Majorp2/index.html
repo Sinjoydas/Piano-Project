@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano-Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <img src="bg.png" alt="Background Image" id="bg-image">
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>
+            <button class="loop-btn" data-key="65" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+            <button class="loop-btn" data-key="83" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+            <button class="loop-btn" data-key="68" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+            <button class="loop-btn" data-key="70" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">boom</span>
+            <button class="loop-btn" data-key="71" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+            <button class="loop-btn" data-key="72" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+            <button class="loop-btn" data-key="74" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">tom</span>
+            <button class="loop-btn" data-key="75" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+        <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+            <button class="loop-btn" data-key="76" aria-label="Loop"><i class="fas fa-sync-alt"></i></button>
+            <input type="range" min="60" max="200" value="128" class="bpm-slider">
+        </div>
+    </div>
+
+    <audio data-key="65" src="audio/clap.wav"></audio>
+    <audio data-key="83" src="audio/hihat.wav"></audio>
+    <audio data-key="68" src="audio/kick.wav"></audio>
+    <audio data-key="70" src="audio/openhat.wav"></audio>
+    <audio data-key="71" src="audio/boom.wav"></audio>
+    <audio data-key="72" src="audio/ride.wav"></audio>
+    <audio data-key="74" src="audio/snare.wav"></audio>
+    <audio data-key="75" src="audio/tom.wav"></audio>
+    <audio data-key="76" src="audio/tink.wav"></audio>
+
+    <div class="controls">
+        <button id="recordBtn" aria-label="Record">Record</button>
+        <button id="resetBtn" aria-label="Reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
